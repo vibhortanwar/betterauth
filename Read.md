@@ -31,3 +31,30 @@
 - create Mount Handler in `app/api/aut/[...all]/route.ts`
 - adjust `eslint.config.mjs` to ignore `/src/generated/**/*`
 - create Client instance in `lib/auth-client.ts`
+
+- Enable Email & Password Authentication
+- Create Sign Up Page PT1
+  - Create Form `components/register-form.tsx`
+  - Log Form Values
+- Setup Sonner
+- Create Sign Up Page PT2
+  - Add Form Validation
+  - Destructure SignUp Function
+  - Showcase `onError`
+- OPTIONS - **minPasswordLength**
+- Create Sign Up Page PT3
+  - Sign Up _default automatically signs in the user_
+- Show Session on Profile Page
+- Show Data in Neon Dashboard
+- Sign Out User
+  - Destructure SignOut Function
+  - She Removed Cookies
+- Create Sign In Page PT1
+  - Create Form `components/login-form.tsx`
+  - Log Form Values
+  - Destructure SignIn Function
+- Show Unauthorized on Profile Page
+- Create Sign In Page PT2
+  - Showcase `onError`
+  - Sign In User
+- FINISH PART 1
