@@ -58,3 +58,53 @@
   - Showcase `onError`
   - Sign In User
 - FINISH PART 1
+
+== PART 2 ==
+
+- Showcase `onRequest` and `onResponse`
+- Showcase Full Cycle Again
+- Add Convenience Links for Auth Pages
+- OPTIONS - **autoSign**
+  - Showcase
+- OPTIONS - **advanced.database.generateId**
+  - Create User
+  - Argon2 `npm install @node-rs/argon2`
+  - Add to `next.config.ts`
+  - Create Utilities `lib/argon2.ts`
+  - Add to `lib/auth.ts`
+  - Showcase
+  - Truncate Tables
+- Create User
+
+- Sign Up User via SERVER ACTIONS
+  - Create Action
+  - Log Form Values
+  - Sign Up User on Server
+- Sign in User via SERVER ACTIONS P1
+  - Create Action
+  - Log Form Values
+  - Sign In User on Server
+  - Showcase - No Cookies
+  - Manually Set Cookies
+  - Showcase - Cookies
+- Get Additional Session Properties
+- PLUGINS - **nextCookies()**
+- FINISH PART 2
+
+== PART 3 ==
+
+- Get Session on Client
+  - Create Get Started Button
+  - Destructure useSession
+  - Showcase
+- OPTIONS - **session.expiresIn**
+  - Change to 15 seconds
+  - Showcase
+  - Change to 30 days
+- Middleware
+  - check for existence of a session cookie
+  - showcase on auth routes
+- Error Handling
+- Hooks
+  - Validate Email
+  - Transform Name
