@@ -1,10 +1,14 @@
+import { GetStartedButton } from "@/components/get-started-button";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="flex items-center justify-center h-dvh">
-      <div className="flex justify-center gap-8 flex-col items-center"></div>
+      <div className="flex justify-center gap-8 flex-col items-center">
+        <h1 className="text-6xl font-bold">BetterAuth</h1>
+        <GetStartedButton />
+      </div>
     </div>
   );
 }
