@@ -19,8 +19,8 @@ export const RegisterForm = () => {
             toast.error(error);
             setIsPending(false);
         }else{
-           router.push("/auth/login");
-           toast.success("Account created successfully!");
+           router.push("/auth/register/success");
+           toast.success("Registration successful! Please check your email to verify your account.");
         }
     }
     return <form onSubmit={handleSubmit} className="max-w-sm w-full space-y-4">

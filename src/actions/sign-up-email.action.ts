@@ -1,7 +1,7 @@
 "use server"
 
-import { auth } from "@/lib/auth";
-import { error } from "console";
+import { auth, ErrorCode } from "@/lib/auth";
+import { APIError} from "better-auth/api"
 
 export async function signUpEmailAction(formData: FormData){
     const name = String(formData.get("name"));
@@ -23,7 +23,16 @@ export async function signUpEmailAction(formData: FormData){
         });
         return { error: null };
     } catch (error) {
+        if (error instanceof APIError) {
+            const errorCode = error.body ? (error.body.code as ErrorCode) : "UNKNOWN";
+
+            switch (errorCode) {
+                default:
+                    return { error: error.message};
+
+            }
+        }
         return { error: "Oops! Something went wrong." };
     }
-    return { error: "Internal Server Error" }
+    return { error: "Internal Server Error" };
 }

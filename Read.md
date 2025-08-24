@@ -108,3 +108,43 @@
 - Hooks
   - Validate Email
   - Transform Name
+- FINISH PART 3
+
+== PART 4 ==
+
+- Google OAuth
+  - Create Buttons
+- GitHub OAuth
+- Account Linking
+- Error Handling
+  - '/auth/login/error'
+- FINISH PART 4
+
+== PART 5 ==
+
+- NodeMailer
+  - Create Template
+- Verify Email
+  - `emailAndPasswordrequireEmailVerification`
+  - `emailVerification`
+  - Handle Error / Expired `/auth/verify`
+  - Destructure sendVerificationEmail
+  - Handle Login Page Not Verified
+- Create Post Sign Up Page
+  - Showcase
+- Forgot Password
+  - Page / Form / Success
+- Reset Password
+  - Page / Form / Success
+  - Showcase
+- FINISH PART 5
+
+== PART 7 ==
+
+- Show the image
+- Updating User
+  - change name / image
+  - update hook
+  - updateing password
+- Custom Sessions
+  - type inference

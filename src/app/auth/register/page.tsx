@@ -1,5 +1,6 @@
 import { RegisterForm } from "@/components/register-form";
 import { ReturnButton } from "@/components/return-button";
+import { SignInOAuthButton } from "@/components/sign-in-oauth-button";
 import Link from "next/link";
 
 export default function Page() {
@@ -8,10 +9,17 @@ export default function Page() {
             <ReturnButton href='/' label="Home" />
             <h1 className="text-3xl font-bold">Register</h1>
         </div>
-        <RegisterForm />
-        <p className="text-muted-foreground text-sm">
-            Already have an account? {" "} 
-            <Link href="/auth/login" className="hover:text-foreground font-bold">Login</Link>
-        </p>
+        <div className="space-y-4">
+            <RegisterForm />
+            <p className="text-muted-foreground text-sm">
+                Already have an account? {" "} 
+                <Link href="/auth/login" className="hover:text-foreground font-bold">Login</Link>
+            </p>
+        </div>
+        <hr className="max-w-sm" />
+        
+        <div className="flex flex-col max-w-sm gap-4">
+            <SignInOAuthButton signUp={true} />
+        </div>
     </div>
 }

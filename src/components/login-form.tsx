@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
 import { signInEmailAction } from "@/actions/sign-in-email.action";
+import Link from "next/link";
 export const LoginForm = () => {
     const [isPending, setIsPending] = React.useState(false);
     const router = useRouter();
@@ -29,7 +30,12 @@ export const LoginForm = () => {
             <Input id="email" name="email" type="email" required />
         </div>
         <div className="space-y-2">
-            <Label htmlFor="password">Password</Label>
+            <div className="flex justify-between items-center gap-2">
+                <Label htmlFor="password">Password</Label>
+                <Link href="/auth/forgot-password" className="text-sm italic text-muted-foreground hover:text-foreground">
+                    Forgot Password?
+                </Link>
+            </div>
             <Input id="password" name="password" type="password" required />
         </div>
         <Button type="submit" className="w-full" disabled={isPending}>
